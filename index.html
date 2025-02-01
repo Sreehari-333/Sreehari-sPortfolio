@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth ">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="tailwind.config.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <!-- Add Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="overflow-x-hidden font-inter leading-8 ">
+    <!-- Header Background -->
+    <div class="fixed top-0 right-0 w-11/12 md:w-10/12 lg:w-9/12 -z-10 translate-y-[-80%]">
+        <img src="images/header-bg-color.png" alt="" class="w-full">
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav
+        class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 bg-white bg-opacity-50 backdrop-blur-sm backdrop-blur-lg font-inter">
+        <a href="#top"> <img src="images/Sreehari.logo.png" alt="Logo" class="w-28 md:w-32 cursor-pointer"></a>
+        <ul
+            class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 font-medium">
+            <li><a href="#top">Home</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#skill">Skill</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#contact">Contact me</a></li>
+        </ul>
+
+        <!-- Dark Mode and Contact Button -->
+        <div class="flex items-center gap-4">
+            <!-- <button id="darkModeToggle"><img src="images/moon_icon.png" alt="" class="w-6"></button> -->
+            <a href="#contact"
+                class="hidden md:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-medium">
+                Contact <img src="images/arrow-icon.png" alt="" class="w-3">
+            </a>
+            <!-- Mobile Menu Button -->
+            <button class="block md:hidden ml-3" onclick="openMenu()">
+                <img src="images/menu-black.png" alt="" class="w-6">
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <ul id="sideMenu"
+            class="flex md:hidden flex-col gap-4 px-10 py-20 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition-all duration-500 font-inter">
+            <div class="absolute right-6 top-6" onclick="closeMenu()">
+                <img src="images/close-black.png" alt="" class="w-4 cursor-pointer">
+            </div>
+            <li onclick="closeMenu()"><a href="#top">Home</a></li>
+            <li onclick="closeMenu()"><a href="#about">About</a></li>
+            <li onclick="closeMenu()"><a href="#skill">Skill</a></li>
+            <li onclick="closeMenu()"><a href="#project">Project</a></li>
+            <li onclick="closeMenu()"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header Content -->
+    <div
+        class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4 font-poppins">
+        <img src="images/21e94c0a-fdbe-4c3a-84f8-449294cd1fc8_20250130_141037_0000.jpg" alt=""
+            class="rounded-full w-24 md:w-32">
+        <h3 class="flex gap-2 text-xl md:text-2xl mb-3 font-medium">Hi! I'm Sreehari <img src="images/hand-icon.png"
+                alt="" class="w-6"></h3>
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold">Frontend web developer based in India</h1>
+        <p class="max-w-2xl mx-auto text-sm sm:text-base font-inter">I am a frontend developer from Kerala, India. I'm a
+            fresher, and I just started my career with Bridgeon.</p>
+
+        <!-- Contact me and Resume Button -->
+        <div class="flex flex-col sm:flex-row items-center gap-4">
+            <a href="#contact"
+                class="px-8 sm:px-10 py-2 sm:py-3 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-white flex items-center gap-2 text-sm sm:text-base font-medium">
+                Contact me <img src="images/right-arrow-white.png" alt="" class="w-4">
+            </a>
+            <a href="images/SreehariResume.pdf" download
+                class="px-8 sm:px-10 py-2 sm:py-3 border border-gray-500 rounded-full bg-gradient-to-r text-black flex items-center gap-2 bg-white text-sm sm:text-base font-medium">
+                My resume <img src="images/download-icon.png" alt="" class="w-4">
+            </a>
+        </div>
+    </div>
+
+    <!-- ----- About me ----- -->
+    <div id="about" class="w-full px-5 md:px-[12%] py-10 scroll-mt-15 font-poppins">
+        <h4 class="text-center mb-2 text-lg font-medium">Indroduction</h4>
+        <h2 class="text-center text-3xl md:text-5xl font-bold">About me</h2>
+        <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-inter">I am an aspiring Frontend Developer with a strong
+            foundation in web technologies and a passion for building user-friendly digital experiences.</p>
+
+        <div class="flex w-full flex-col lg:flex-row items-center gap-10 lg:gap-20 my-10">
+            <!-- left side -->
+            <div class="max-w-max mx-auto relative">
+                <img src="images/IMG_0727.jpg" alt="" class="w-64 sm:w-80 rounded-3xl max-w-none">
+            </div>
+
+            <!-- Right Side -->
+            <div class="flex-1">
+                <p class="mb-10 max-w-2xl font-inter">I am an aspiring Frontend Developer with a strong foundation in
+                    web technologies and a passion for building user-friendly digital experiences. With a keen interest
+                    in modern web development, I am committed to continuous learning and aim to contribute to innovative
+                    projects that make an impact.</p>
+
+                <ul class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
+                    <!-- Languages -->
+                    <li
+                        class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black">
+                        <img src="images/code-icon.png" alt="" class="w-7 mt-3">
+                        <h3 class="my-4 font-semibold text-gray-700">Languages</h3>
+                        <p class="text-gray-600 text-sm">C, HTML, CSS, JavaScript</p>
+                    </li>
+
+                    <!-- Education -->
+                    <li
+                        class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black">
+                        <img src="images/edu-icon.png" alt="" class="w-7 mt-3">
+                        <h3 class="my-4 font-semibold text-gray-700">Education</h3>
+                        <p class="text-gray-600 text-sm">Plus Two in Computer Science</p>
+                    </li>
+
+                    <!-- Projects -->
+                    <li
+                        class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black">
+                        <a href="#project">
+                            <img src="images/project-icon.png" alt="" class="w-7 mt-3">
+                            <h3 class="my-4 font-semibold text-gray-700">Projects</h3>
+                            <p class="text-gray-600 text-sm">Built more than 1 project</p>
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Tools -->
+                <h4 class="my-6 text-gray-700 font-medium">Tools I use</h4>
+                <ul class="flex items-center gap-3 sm:gap-5">
+                    <!-- VS Code -->
+                    <li
+                        class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                        <img src="images/vscode.png" alt="" class="w-5 sm:w-7">
+                    </li>
+
+                    <!-- Tailwind -->
+                    <li
+                        class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                        <img src="images/tailwind.jpeg" alt="" class="w-5 sm:w-7">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- My Skills -->
+    <div id="skill" class="w-full px-5 md:px-[12%] py-10 scroll-mt-15 font-poppins">
+        <h4 class="text-center mb-2 text-lg font-medium">What I know</h4>
+        <h2 class="text-center text-3xl md:text-5xl font-bold">My skills</h2>
+        <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-inter">I am a fresher frontend developer.</p>
+
+        <!-- Skills Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 my-10">
+            <!-- C program -->
+            <div
+                class="border border-gray-400 rounded-lg px-8 py-12 hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black">
+                <img src="images/c-logo.jpeg" alt="" class="w-10">
+                <h3 class="text-lg my-4 text-gray-700 font-semibold">C Program</h3>
+                <p class="text-sm text-gray-600 leading-5">C is a general-purpose, procedural programming language that
+                    provides low-level memory management and efficient performance.</p>
+                <a href="" class="flex items-center gap-2 text-sm mt-5 font-medium">Read more <img
+                        src="images/right-arrow.png" alt="" class="w-4"></a>
+            </div>
+
+            <!-- HTML -->
+            <div
+                class="border border-gray-400 rounded-lg px-8 py-12 hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black">
+                <img src="images/html-logo.jpeg" alt="" class="w-10">
+                <h3 class="text-lg my-4 text-gray-700 font-semibold">HTML</h3>
+                <p class="text-sm text-gray-600 leading-5">HTML (Hypertext Markup Language) is a standard markup
+                    language used to create the structure and content of web pages.</p>
+                <a href="" class="flex items-center gap-2 text-sm mt-5 font-medium">Read more <img
+                        src="images/right-arrow.png" alt="" class="w-4"></a>
+            </div>
+
+            <!-- CSS -->
+            <div
+                class="border border-gray-400 rounded-lg px-8 py-12 hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black">
+                <img src="images/css-logo.jpeg" alt="" class="w-10">
+                <h3 class="text-lg my-4 text-gray-700 font-semibold">CSS</h3>
+                <p class="text-sm text-gray-600 leading-5">CSS (Cascading Style Sheets) is a styling language used to
+                    control the layout, appearance, and behavior of web pages written in HTML.</p>
+                <a href="" class="flex items-center gap-2 text-sm mt-5 font-medium">Read more <img
+                        src="images/right-arrow.png" alt="" class="w-4"></a>
+            </div>
+
+            <!-- JavaScript -->
+            <div
+                class="border border-gray-400 rounded-lg px-8 py-12 hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black">
+                <img src="images/js-logo.jpeg" alt="" class="w-10">
+                <h3 class="text-lg my-4 text-gray-700 font-semibold">JavaScript</h3>
+                <p class="text-sm text-gray-600 leading-5">JavaScript is a dynamic programming language used to add
+                    interactivity, animation, and dynamic effects to web pages and mobile applications.</p>
+                <a href="" class="flex items-center gap-2 text-sm mt-5 font-medium">Read more <img
+                        src="images/right-arrow.png" alt="" class="w-4"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----Project---- -->
+    <div id="project" class="w-full px-5 md:px-[12%] py-10 scroll-mt-15 font-poppins">
+        <h4 class="text-center mb-2 text-lg font-medium">Project</h4>
+        <h2 class="text-center text-3xl md:text-5xl font-bold">My latest work</h2>
+        <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-inter">Welcome to my web development portfolio! Explore
+            the collection of projects showcasing my expertise in front-end development.</p>
+
+        <div
+            class="border border-gray-400 rounded-lg px-8 py-12 hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black">
+            <h4 class="text-center text-3xl font-bold">EaseMyTrip Clone Website</h4>
+            <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-inter">I replicated the popular travel booking
+                website EaseMyTrip using HTML and CSS, demonstrating my proficiency in front-end development and design
+                principles. This static website showcases a visually appealing and user-friendly interface, with a
+                responsive layout that adapts to various screen sizes and devices, highlighting my attention to detail
+                and visual design skills.</p>
+        </div>
+
+        <a href="#top"
+            class="w-max flex items-center justify-center gap-1 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-10 hover:bg-lightHover hover:-translate-y-1 duration-500 font-medium">
+            Show more <img src="images/right-arrow.png" alt="" class="w-4">
+        </a>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact"
+        class="w-full px-5 md:px-[12%] py-10 bg-[url('./images/footer-bg-color.png')] bg-no-repeat bg-[length:90%_auto] bg-center scroll-mt-15 font-poppins">
+        <h4 class="text-center mb-2 text-lg font-medium">Connect with me</h4>
+        <h2 class="text-center text-3xl md:text-5xl font-bold">Get in touch</h2>
+        <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-inter">I'd love to hear from you! If you have any
+            questions, comments, or feedback, please use the form below.</p>
+
+        <form method="post" action="https://api.web3forms.com/submit" class="max-w-2xl mx-auto">
+            <input type="hidden" name="access_key" value="a20cab88-153a-4d08-8213-9b0ed1b03a99">
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-10 mb-8">
+                <input type="text" placeholder="Enter your name"
+                    class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white font-inter "
+                    required name="name">
+                <input type="email" placeholder="Enter your email"
+                    class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white font-inter"
+                    required name="email">
+            </div>
+            <textarea rows="6" placeholder="Enter your message"
+                class="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6 font-inter"
+                required name="message"></textarea>
+            <button
+                class="py-3 px-8 w-max flex items-center justify-center gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 font-medium">
+                Submit now <img src="images/right-arrow-white.png" alt="" class="w-4">
+            </button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-20 font-inter">
+        <div class="text-center">
+            <img src="images/Sreehari.logo.png" alt="" class="w-36 mx-auto mb-2">
+            <div class="w-max flex items-center gap-2 mx-auto">
+                <img src="images/mail_icon.png" alt="" class="w-4">
+                sreeharirajesh1234@gmail.com
+            </div>
+        </div>
+        <div class="text-center sm:flex items-center justify-between border-t border-t-gray-400 mx-[10%] mt-12 py-6">
+            <p>© 2025 Sreehari. All rights reserved.</p>
+            <!-- Wrap the links in a div and use ml-auto to push it to the right -->
+            <div class="ml-auto">
+                <ul class="flex items-center gap-10 justify-center mt-4 sm:mt-0">
+                    <li><a href="https://github.com/Sreehari-333" target="_blank">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/sreeharirajesh05/" target="_blank">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
